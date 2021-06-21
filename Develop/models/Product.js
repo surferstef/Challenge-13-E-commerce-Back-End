@@ -31,7 +31,7 @@ Product.init(
     },
    // define stock column
    stock: {
-     id: DataTypes.INTEGER,
+     type: DataTypes.INTEGER,
      allowNull: false,
      defaultValue: 10,
      validate: {
