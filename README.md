@@ -12,7 +12,8 @@ This application builds the back end for an e-commerce site. We take a working E
 ## Video Demo
 
 * Initializing DataBase
-<iframe src="https://drive.google.com/file/d/173Eg8SW9qWE47cisC58b0LJaO_VjgfRG/preview" width="640" height="480"></iframe>
+[![Watch the video](https://drive.google.com/file/d/173Eg8SW9qWE47cisC58b0LJaO_VjgfRG/view)](https://drive.google.com/file/d/173Eg8SW9qWE47cisC58b0LJaO_VjgfRG/view)
+
 
 ## Built With
 * JavaScript
