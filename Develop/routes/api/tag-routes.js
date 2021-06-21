@@ -48,7 +48,7 @@ router.get('/:id', (req, res) => {
       ]
     })
     .then(dbTag => res.json(dbTag))
-   .catch(err => {
+    .catch(err => {
      console.log(err);
      res.status(500).json(err);
    });
@@ -56,14 +56,72 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new tag
+  Tag.create(
+    {
+      tag_name: req.body.tag_name
+    }
+  )
+  .then(dbTag => res.json(dbTag))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
+  Tag.update(
+    {
+      body: req.body.body,
+    },
+    {
+      where: {
+        id: req.params.id
+      }
+    }
+    // {
+    //   title: req.body.title,
+    //   body: req.body.body,
+    //   category: req.body.category
+    // },
+    // {
+    //   where: {
+    //     id: req.params.id
+    //   }
+  )
+  .then(dbTag => {
+    if (!dbTag) {
+      res.status(404).json({ message: 'No Tag was found with this id' });
+      return;
+    }
+    res.json(dbTag);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
+  Tag.destroy(
+    {
+      where: {
+        id: req.params.id
+      }
+    })
+    .then(dbTag => {
+      if (!dbTag) {
+        res.status(404).json({ message: 'No Tag was found with this id' });
+        return;
+      }
+      res.json(dbTag);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+
 });
 
 module.exports = router;
