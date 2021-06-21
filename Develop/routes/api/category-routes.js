@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
      ]
     })
     .then(dbCat => {
-      if(!dbCatData) {
+      if(!dbCat) {
         res.status(404).json({message: 'Unfortunately, no categories were found'});
         return;
       }
