@@ -11,8 +11,14 @@ This application builds the back end for an e-commerce site. We take a working E
 
 ## Video Demo
 
-* Initializing DataBase
+* Initializing Database:
 [![Watch the video](https://drive.google.com/file/d/173Eg8SW9qWE47cisC58b0LJaO_VjgfRG/view)](https://drive.google.com/file/d/173Eg8SW9qWE47cisC58b0LJaO_VjgfRG/view)
+
+* Seeding DB and GET Routes for ALL Data:
+[![Watch the video](https://drive.google.com/file/d/1DcoUDtGOKSHr71UYzonOZmL62f0XT2sW/view)](https://drive.google.com/file/d/1DcoUDtGOKSHr71UYzonOZmL62f0XT2sW/view)
+
+* GET Routes for single data and POST Operations:
+[![Watch the video](https://drive.google.com/file/d/1jcOzJI7sv92Ymdt1xt946K_fOuVwy0eP/view)](https://drive.google.com/file/d/1jcOzJI7sv92Ymdt1xt946K_fOuVwy0eP/view)
 
 
 ## Built With
